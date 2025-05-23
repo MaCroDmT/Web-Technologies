@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REG</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Regestration</legend>
+
+      <form action="../MODEL/dbconn.php" method="post">
+        <table align="center" width="70%">
+          <tr>
+            username, password, gender, interest,filename
+            <td>
+              <label for="Username">USERNAME</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="text" name="uname" id="uname" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Password">PASSWORD</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="password" name="upass" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Gender">GENDER</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="gender" value="Male" /> Male
+              <input type="radio" name="gender" value="FeMale" /> FeMale
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="interest">Interest</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="text" name="interest" id="interest" />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="reset" name="reset" value="RESET" />
+            </td>
+            <td>
+              <input type="submit" name="submit" value="REGISTER" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+    <a href="Login.html">
+      <fieldset>LOGIN</fieldset>
+    </a>
+  </body>
+</html>

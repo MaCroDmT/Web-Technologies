@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regestration</title>
+  </head>
+  <body>
+    <form action="../CONTROL/REG_1_CONTROL.php" method="POST">
+      <fieldset>
+        <legend>GUEST REGESTRATION</legend>
+        <table>
+          <tr>
+            <td>NAME</td>
+
+            <td>:</td>
+
+            <td><input type="Text" name="name" /></td>
+          </tr>
+
+          <tr>
+            <td>Password</td>
+
+            <td>:</td>
+
+            <td><input type="password" name="pass" /></td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+
+            <td>:</td>
+
+            <td>
+              <input type="radio" name="gender" value="Male" />Male
+              <input type="radio" name="gender" value="Female" />Female
+            </td>
+          </tr>
+
+          <tr>
+            <td>Room type</td>
+
+            <td>:</td>
+
+            <td>
+              <select name="Room_type">
+                <option value=" ">Select a room type</option>
+                <option value="AC">AC</option>
+                <option value="Non AC">Non AC</option>
+                <option value="Delux">Delux</option>
+                <option value="Premium">Premium</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Give your specialinstruction</td>
+            <td>:</td>
+            <td>
+              <textarea name="addon"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="submit" name="submit" />
+            </td>
+
+            <td>
+              <input type="reset" name="reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
